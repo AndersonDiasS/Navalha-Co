@@ -39,7 +39,7 @@ Animação sutil da galeria via CSS scroll timeline, com fallback estático e re
 
 Build, ESLint e TypeScript passaram. Chrome/Playwright: 320, 390, 768 e 1440 px sem overflow horizontal; links de WhatsApp com serviço/preço, imagens, teclado, link de salto, movimento reduzido e JSON-LD verificados. Mapa confirmado visualmente ao entrar na seção, sem clique.
 
-Lighthouse mobile no build de produção, execução final isolada: **Performance 95, Acessibilidade 100, Boas Práticas 100, SEO 100**. Relatório: `reports/lighthouse-mobile.html`. Uma execução concorrente com capturas marcou Performance 62; as notas variam com carga da máquina, rede e mapa externo. Revalidar no domínio publicado.
+Lighthouse mobile no build de produção, execução final isolada: **Performance 95, Acessibilidade 100, Boas Práticas 100, SEO 100**. O relatório gerado fica apenas no ambiente local, pois registra URLs de terceiros que podem conter chaves de API. Uma execução concorrente com capturas marcou Performance 62; as notas variam com carga da máquina, rede e mapa externo. Revalidar no domínio publicado.
 
 Os scripts usam Webpack porque o Turbopack apresentou uma falha ao criar processos internos neste ambiente. A porta padrão é 3000; se estiver ocupada, Next escolhe outra e informa no terminal.
 
