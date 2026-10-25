@@ -25,6 +25,10 @@ As fotos usam URLs do Unsplash autorizadas em `next.config.ts`. Fontes Oswald e 
 2. Importe o repositório na Vercel e mantenha o preset Next.js, raiz do projeto e comandos padrão.
 3. Ajuste `site.url` para o domínio atribuído e publique novamente.
 
+`vercel.json` fixa o preset Next.js e usa a saída padrão do framework. Se o
+projeto já existia na Vercel com `Output Directory = public`, o próximo deploy
+usa essa configuração do repositório.
+
 ## Observações
 
 O estabelecimento, endereço, profissionais e depoimentos são fictícios; as fotos são ilustrativas. O mapa incorporado abre diretamente e mostra o bairro, não uma loja real. Não há agenda ou envio automático de mensagens: os links abrem o WhatsApp com o texto preenchido. O JSON-LD usa HairSalon e deriva horários/ofertas do conteúdo; não publica avaliações fictícias como notas estruturadas.
